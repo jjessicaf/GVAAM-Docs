@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
+gem 'github-pages'
+
 gemspec
 
 gem "jekyll-github-metadata", ">= 2.15"
