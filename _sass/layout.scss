@@ -16,7 +16,7 @@
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    width: calc((100% - #{$nav-width + $content-width}) / 2 );
     min-width: $nav-width;
   }
 }
@@ -32,8 +32,8 @@
     // stylelint-disable function-name-case
     // disable for Max(), we want to use the CSS max() function
     margin-left: Max(
-      #{$nav-width},
-      calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+      #{$nav-width} + 20px,
+      calc((100% - #{$nav-width + $content-width}) / 2)
     );
     // stylelint-enable function-name-case
   }
